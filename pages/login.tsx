@@ -1,7 +1,9 @@
+import React from 'react'
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 export default function Login() {
   return (
+    <>
     <Container className="login">
       <Row>
         <Col className="text-center">
@@ -29,5 +31,6 @@ export default function Login() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }
