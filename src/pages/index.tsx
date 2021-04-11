@@ -17,7 +17,6 @@ export default function Home() {
 
 
 
-        
         <div>Minotaur</div>
       </main>
     </div>
