@@ -6,11 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Minotour
-
-
-
-        </title>
+        <title>Minotour</title>
       </Head>
       <main>
         <div>Minotaur</div>
