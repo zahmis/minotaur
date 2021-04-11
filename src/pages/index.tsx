@@ -9,14 +9,6 @@ export default function Home() {
         <title>Minotour</title>
       </Head>
       <main>
-
-
-
-
-
-
-
-
         <div>Minotaur</div>
       </main>
     </div>
