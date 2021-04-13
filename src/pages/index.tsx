@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
         <title>Minotour</title>
 
-        
       </Head>
       <main>
         <div>Minotaur</div>
