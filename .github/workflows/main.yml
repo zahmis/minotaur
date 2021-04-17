@@ -17,7 +17,7 @@ jobs:
       - name: yarn install
       - run: yarn install
       - name: eslint
-      - run: yarn lint-fix
+      # - run: yarn lint-fix
 
   build:
     runs-on: ubuntu-latest
