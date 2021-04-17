@@ -5,8 +5,10 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
+    // "plugin:react/recommended",
+    // "plugin:@typescript-eslint/recommended",
+    "prettier"
+    // "prettier/@typescript-eslint"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -14,8 +16,10 @@
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": ["react", "@typescript-eslint"],
+  "root": true,
   "rules": {}
 }
