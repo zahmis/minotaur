@@ -12,9 +12,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-    
-    - name: dependencies
-      run: yarn install
+
+      - name: dependencies
+        run: yarn install
 
   #       name: yarn install
   #     # - run: yarn install
