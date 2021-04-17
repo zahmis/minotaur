@@ -11,9 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: dependencies
-        uses: actions/checkout@v2
-        run: yarn install
+      - uses: actions/checkout@v2
+    
+    - name: dependencies
+      run: yarn install
+
   #       name: yarn install
   #     # - run: yarn install
   #     #   name: eslint
