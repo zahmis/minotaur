@@ -2,14 +2,14 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   workflow_dispatch:
 
 jobs:
-  lint: 
+  lint:
     name: lint-fix
     runs-on: ubuntu-latest
     steps:
@@ -17,9 +17,8 @@ jobs:
       - name: yarn install
       - run: yarn install
       - name: eslint
-      -run: yarn lint-fix
-      
-    
+      - run: yarn lint-fix
+
   build:
     runs-on: ubuntu-latest
     steps:
