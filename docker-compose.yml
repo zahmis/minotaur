@@ -1,9 +1,10 @@
 version: '3.8'
 services:
-  webserver:
+  server:
     build:
       context: .
       dockerfile: Dockerfile
+    command: sh -c "yarn dev"
     ports:
       - 3000:3000
     links:
