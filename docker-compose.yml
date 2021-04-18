@@ -4,12 +4,16 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    links:
+      - mongo
+    depends_on:
+      - mongo
     volumes:
       - .:/mino:cached
       - /mino/node_modules
-    ports:
-      - '3000:3000'
-    command: yarn dev
+    tty: true
 
   mongo:
     image: mongo
