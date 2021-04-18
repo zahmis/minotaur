@@ -1,0 +1,1 @@
+{"version":3,"file":"hello.js","sourceRoot":"","sources":["../../src/pages/api/hello.js"],"names":[],"mappings":"AAAA,6EAA6E;AAE7E,iCAAiC;AACjC,gDAAgD;AAChD,KAAK","sourcesContent":["// Next.js API route support: https://nextjs.org/docs/api-routes/introduction\n\n// export default (req, res) => {\n//   res.status(200).json({ name: 'John Doe' });\n// };\n"]}
