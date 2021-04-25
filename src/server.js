@@ -1,9 +1,11 @@
-require('dotenv').config();
-
 const mongoose = require('mongoose');
 
 mongoose
-  .connect(process.env.MONGO_URI, { auto_reconnect: true, useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.MONGO_URI, {
+    auto_reconnect: true, 
+    useNewUrlParser: true,
+    useUnifiedTopology: true 
+  })
   .catch((err) => {
     console.log('error');
   });
@@ -21,5 +23,4 @@ const Kitten = mongoose.model('Kitten', kittySchema);
 
 const silence = new Kitten({ name: 'silence' });
 silence.save().then(() => console.log('meow'));
-// const hoge = Kitten.find()
 return;
