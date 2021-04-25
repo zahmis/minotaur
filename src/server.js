@@ -1,8 +1,14 @@
-const mongoose = require('mongoose')
+require('dotenv').config();
 
-mongoose.connect('mongodb://localhost:27017/mino', {auto_reconnect:true, useNewUrlParser: true, useUnifiedTopology: true}).catch((err)=>{
+const mongoose = require('mongoose');
+
+
+mongoose.connect(process.env.MONGO_URI,
+   {auto_reconnect:true, useNewUrlParser: true, useUnifiedTopology: true}).catch((err)=>{
     console.log('error')
 })
+
+console.log(process.env.MONGO_URI)
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
