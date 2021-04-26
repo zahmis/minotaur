@@ -1,19 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "commonjs",
+    "target": "es2016",
+    "lib": [
+      "dom",
+      "es7",
+      "esnext.asynciterable"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["./src/**/*.ts","next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_app.js", "src/pages/api/hello.js"],
-  "exclude": ["node_modules"]
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
