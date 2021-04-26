@@ -1,11 +1,24 @@
 // import * as dotenv from "dotenv"
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
 // dotenv.config()
+const connection ={};
 
-export async function dbConnect(){
-  if(mongoose.connection.readyState >= 1){
+
+async function dbConnect(){
+  // if(mongoose.connection.readyState >= 1){
+  //   return;
+// }
+  if(connection.isConnected){
     return;
   }
-  return mongoose.connect(process.env.MONGO_URI)
+  
+  const db = await mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  connection.isConnected = db.connection[0].readyState;
+  console.log(connection.isConnected)
 }
+
+export default dbConnect;
