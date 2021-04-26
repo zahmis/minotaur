@@ -1,7 +1,7 @@
 import * as mongoose from 'mongoose'
 
 const NoteSchema = new mongoose.Schema({
-  titel: {
+  title: {
     type: String,
     required:[true, 'Please add a title.'],
     unique: true,
