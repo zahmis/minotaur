@@ -15,7 +15,7 @@ async function dbConnect(){
     return;
   }
   
-  const db = await mongoose.connect("mongodb://localhost:27017/mino", {
+  const db = await mongoose.connect("mongodb://mongo:27017/mino", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
