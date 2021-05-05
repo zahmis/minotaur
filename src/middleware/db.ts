@@ -2,7 +2,7 @@
 import mongoose from "mongoose";
 
 // dotenv.config()
-const connection ={};
+const connection = {};
 
 async function dbConnect(){
   if(mongoose.connection.readyState >= 1){
