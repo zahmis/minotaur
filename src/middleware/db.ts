@@ -2,7 +2,7 @@
 import mongoose from "mongoose";
 
 // dotenv.config()
-const connection ={};
+const connection = {};
 
 async function dbConnect(){
   if(mongoose.connection.readyState >= 1){
@@ -15,7 +15,7 @@ async function dbConnect(){
     return;
   }
   
-  const db = await mongoose.connect("mongodb://localhost:27017/mino", {
+  const db = await mongoose.connect("mongodb://mongo:27017/mino", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
